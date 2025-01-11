@@ -1,0 +1,28 @@
+body {
+    font-family: 'Consolas', monospace;
+    background-color: rgb(37, 25, 148);
+}
+.wrapper {
+    width: 90vw;
+    margin: 0 auto;
+}
+.picikep img
+{
+    width: 200px;
+    margin: 0 auto;
+}
+
+.eletrajz {
+    width: 70vw;
+    margin: 0 auto;
+    text-align: justify;
+    color: bisque;
+}
+
+.szobrocskak {
+    margin: 0 auto;
+}
+
+.forras {
+    font-size: 0.7rem;
+}
