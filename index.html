@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    <div class="wrapper">
         <!-- Navigáció -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -45,7 +44,7 @@
         </nav>
 
         <!-- Slide -->
-        <div id="carouselExampleSlidesOnly" class="carousel slide mt-3 mb-3 picikep" data-bs-ride="carousel">
+        <div id="carouselExampleSlidesOnly" class="carousel slide mt-3 picikep" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="pics/balta_szovjet/balta_1.jpg" class="d-block img-fluid shadow w-10" alt="balta">
@@ -60,16 +59,43 @@
         </div>
 
         <!-- Kolodko Mihály életrajz -->
-        <div class="eletrajz">
-            <p id="eletrajz"></p>
+        <div class="container mt-3 eletrajz fs-6">
+            <h2>Életrajz</h2>
+            <img class="img-fluid shadow w-10 km" src="pics/amester.jpg" alt="Kolodko Mihály">
+            <p id="eletrajz">Kolodko Mihály életrajza...</p>
+            <p class="forras">Forrás:<br><a
+                    href="https://hu.wikipedia.org/wiki/Kolodko_Mih%C3%A1ly"
+                    target="_blank">Wikipedia</a>
+            </p>
+        </div>
+        <!-- Útikalauz, google map -->
+        <div class="container mt-3 fs-6 utikalauz">
+            <div class="row g-3">
+                <div class="col-12 col-md-6">
+                    <h2>Útikalauz</h2>
+                    <p id="utikalauz">Útikalauz</p>
+                    <p class="forras">Források:<br><a
+                            href="https://index.hu/urbanista/2017/07/24/szabadsag_ter_szobor_beka_budapest/"
+                            target="_blank">https://index.hu/urbanista/2017/07/24/szabadsag_ter_szobor_beka_budapest/</a>
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h2>Útvonal</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m63!1m12!1m3!1d8408.661905976707!2d19.041950470072837!3d47.50424973888673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m48!3e2!4m5!1s0x4741ddd3ab6b3269%3A0xbccc26e7a18b0a71!2sBudapest%2C%20Kolodko%3A%20Us%C3%A1nka%20visszat%C3%A9r%20miniszobor%2C%20Id.%20Antall%20J%C3%B3zsef%20rkp.%2C%201055!3m2!1d47.5093569!2d19.045335899999998!4m5!1s0x4741dc1046d4a33d%3A0x342122b8ff8f0f6e!2sBudapest%2C%20Parlament%2C%20Kossuth%20Lajos%20t%C3%A9r!3m2!1d47.507121!2d19.045669!4m5!1s0x4741dd084c99293f%3A0x256317db750e30eb!2sBudapest%2C%20Kolodko%3A%20A%20balta%20miniszobor%2C%20Szabads%C3%A1g%20t%C3%A9r!3m2!1d47.5050764!2d19.049971799999998!4m4!1s0x4741dc1389259bad%3A0x7e116306995eabed!3m2!1d47.504629!2d19.0503258!4m5!1s0x4741dda36328da05%3A0x9139097fa9e02f8!2sBudapest%2C%20Kolodko%3A%20Breki%20miniszobor%2C%20Szabads%C3%A1g%20t%C3%A9r!3m2!1d47.503856299999995!2d19.0502199!4m5!1s0x4741c15e3aa3cdf7%3A0xdd42fcacae7fbccb!2sSzent%20Istv%C3%A1n%20Bazilika!3m2!1d47.5008902!2d19.053988699999998!4m5!1s0x4741dc6b8d9944fd%3A0x21335121e0a48bce!2sMagyar%20%C3%81llami%20Operah%C3%A1z!3m2!1d47.502716899999996!2d19.0583076!4m5!1s0x4741dd024e1a4a45%3A0x2d11880e88da341b!2sBudapest%2C%20Kolodko%3A%20Holdj%C3%A1r%C3%B3%20miniszobor!3m2!1d47.5058503!2d19.052176199999998!5e1!3m2!1shu!2shu!4v1736607826458!5m2!1shu!2shu"
+                        width="100%" height="95%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </div>
 
         <!-- Szobrocskák -->
-        <div class="container mt-5 szobrocskak">
+        <div class="container mt-5 mb-5 fa-6 szobrocskak">
             <div class="row g-3">
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="pics/usanka_parlament/usankaV2_1.jpg" class="card-img-top" alt="usanka">
+                <h2>Szobrok</h2>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="pics/usanka_parlament/usankaV2_1.jpg" class="card-img-top p-2" alt="usanka">
                         <div class="card-body">
                             <h5 class="card-title">Breki</h5>
                             <p id="brekileiras" class="card-text"></p>
@@ -85,20 +111,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="pics/usanka_parlament/usankaV2_1.jpg" class="card-img-top" alt="usanka">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="pics/usanka_parlament/usankaV2_1.jpg" class="card-img-top p-2" alt="usanka">
                         <div class="card-body">
-                            <h5 class="card-title">Dorina2</h5>
+                            <h5 class="card-title">Holdjáró</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
                             <a href="#" class="btn btn-primary">Látnivaló2</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="pics/balta_szovjet/balta_1.jpg" class="card-img-top" alt="balta">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="pics/balta_szovjet/balta_1.jpg" class="card-img-top p-2" alt="balta">
                         <div class="card-body">
                             <h5 class="card-title">Balta</h5>
                             <p id="baltaleiras" class="card-text"></p>
@@ -106,20 +132,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="pics/usanka_parlament/usankaV2_1.jpg" class="card-img-top" alt="usanka">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="pics/usanka_parlament/usankaV2_1.jpg" class="card-img-top p-2" alt="usanka">
                         <div class="card-body">
                             <h5 class="card-title">Usanka</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <p id="usankaleiras" class="card-text"></p>
                             <a href="#" class="btn btn-primary">Országház</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

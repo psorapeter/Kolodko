@@ -2,27 +2,44 @@ body {
     font-family: 'Consolas', monospace;
     background-color: rgb(37, 25, 148);
 }
+
 .wrapper {
     width: 90vw;
     margin: 0 auto;
 }
-.picikep img
-{
+.km {
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+}
+.picikep img {
     width: 200px;
     margin: 0 auto;
 }
 
-.eletrajz {
-    width: 70vw;
-    margin: 0 auto;
+.eletrajz, .utikalauz, .szobrocskak {
     text-align: justify;
     color: bisque;
 }
 
-.szobrocskak {
+h2 {
+    text-align: center;
+}
+
+.kozep {
     margin: 0 auto;
 }
 
+.szobrocskak p {
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
 .forras {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+}
+
+.card {
+    height: 500px;
+    overflow-y: auto;
 }
