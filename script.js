@@ -27,6 +27,13 @@
             })
             .catch(error => console.error('Error loading the file:', error));
 
+        fetch('holdjaro.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('holdjaroleiras').innerText = data;
+            })
+            .catch(error => console.error('Error loading the file:', error));
+
         fetch('utikalauz.txt')
             .then(response => response.text())
             .then(data => {
