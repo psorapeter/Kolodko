@@ -40,4 +40,31 @@
                 document.getElementById('utikalauz').innerText = data;
             })
             .catch(error => console.error('Error loading the file:', error));
+
+        fetch('operahaz.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('operahazleiras').innerText = data;
+            })
+            .catch(error => console.error('Error loading the file:', error));
             
+        fetch('bazilika.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('bazilikaleiras').innerText = data;
+            })
+            .catch(error => console.error('Error loading the file:', error));
+            
+        fetch('szovjet.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('szovjetleiras').innerText = data;
+            })
+            .catch(error => console.error('Error loading the file:', error));
+
+        fetch('orszaghaz.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('orszaghazleiras').innerText = data;
+            })
+            .catch(error => console.error('Error loading the file:', error));
