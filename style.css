@@ -3,9 +3,9 @@ body {
     color: white;
     padding-top: 80px;
     background-image: url('pics/bg.jpg');
-    background-size: cover; /* A kép kitölti a teljes hátteret */
-    background-repeat: no-repeat; /* A kép nem ismétlődik */
-    background-attachment: fixed; /* A kép fix marad a görgetéskor */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 html {
@@ -14,9 +14,9 @@ html {
 
 .navbg {
     background-image: url('pics/bg.jpg');
-    background-size: cover; /* A kép kitölti a teljes hátteret */
-    background-repeat: no-repeat; /* A kép nem ismétlődik */
-    background-attachment: fixed; /* A kép fix marad a görgetéskor */
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .wrapper {
@@ -45,10 +45,6 @@ html {
 
 h2 {
     text-align: center;
-}
-
-.kozep {
-    margin: 0 auto;
 }
 
 .szobrocskak p {
