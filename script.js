@@ -1,4 +1,3 @@
-        // JavaScript kód a .txt fájl betöltéséhez
         fetch('eletrajz.txt')
             .then(response => response.text())
             .then(data => {
