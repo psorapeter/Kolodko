@@ -19,11 +19,6 @@ html {
     background-attachment: fixed;
 }
 
-.wrapper {
-    width: 90vw;
-    text-align: center;    
-}
-
 .container-custom {
     width: 90%;
     margin: 0 auto;
